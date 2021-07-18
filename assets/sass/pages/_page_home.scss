@@ -5,6 +5,9 @@
 .intro {
   margin-top: 160px;
   padding: 0px 0 128px 0;
+  
+ 
+
   @include d(m) {
     padding: 0px 0 64px 0;
     margin-top: 100px;
@@ -13,6 +16,24 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    .orna1{
+      position: absolute;
+      top: 47%;
+      left: -40px;
+    }
+    .orna2{
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+    }
+
+    .orna3{
+      position: absolute;
+      top: 5%;
+      right: 60%;
+    }
+    
     @include d(m) {
       display: flex;
       flex-direction: column;
@@ -102,6 +123,19 @@
     grid-template-columns: repeat(2, 1fr);
     place-items: start end;
     align-items: center;
+    position: relative;
+ 
+    .orna2{
+      position: absolute;
+      bottom: 28%;
+      right: 10%;
+    }
+
+    .orna3{
+      position: absolute;
+      top: 0;
+      right: 50%;
+    }
     @include d(m) {
       display: flex;
       flex-direction: column;
@@ -155,6 +189,27 @@
   padding: 128px 0;
   @include d(m) {
     padding: 64px 0;
+  }
+
+  .container{
+    position: relative;
+  }
+
+  .orna1{
+    position: absolute;
+    top: -5%;
+    right: 20%;
+  }
+  .orna2{
+    position: absolute;
+    bottom: -10%;
+    right: 50%;
+  }
+
+  .orna3{
+    position: absolute;
+    bottom: 30%;
+    left: -40px;
   }
 
   &__titulo {
