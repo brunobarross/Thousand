@@ -3,10 +3,10 @@
 
 
 .intro {
-  margin-top: 160px;
+  margin-top: 200px;
   padding: 0px 0 128px 0;
-  
- 
+
+
 
   @include d(m) {
     padding: 0px 0 64px 0;
@@ -17,23 +17,26 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
-    .orna1{
+
+    .orna1 {
       position: absolute;
       top: 47%;
       left: -40px;
+     
     }
-    .orna2{
+
+    .orna2 {
       position: absolute;
       bottom: 0;
       right: 50%;
     }
 
-    .orna3{
+    .orna3 {
       position: absolute;
       top: 5%;
       right: 60%;
     }
-    
+
     @include d(m) {
       display: flex;
       flex-direction: column;
@@ -46,6 +49,7 @@
         font-family: $font-2;
         color: $cor-preto-1;
         max-width: 360px;
+
         @include d(m) {
           font-size: rem(48);
           width: 100%;
@@ -59,6 +63,7 @@
         font-weight: 600;
         font-size: rem(22);
         padding-top: rem(64);
+
         @include d(m) {
           text-align: center;
         }
@@ -70,6 +75,7 @@
           height: 2px;
           background: $cor-preto-1;
           margin-top: 22px;
+
           @include d(m) {
             margin: 16px auto 0 auto;
           }
@@ -81,6 +87,7 @@
         grid-template-columns: repeat(2, minmax(100px, 220px));
         gap: 32px;
         padding-top: rem(64);
+
         .select__box {
           padding: 21px 32px;
           border-radius: 6px;
@@ -89,6 +96,7 @@
           background: #fff;
           text-align: center;
           outline: 0;
+
           option {
             font-size: rem(16);
           }
@@ -98,6 +106,7 @@
       .btn {
         margin-top: 50px;
         @include btn;
+
         @include d(m) {
           margin: 50px auto 0 auto;
         }
@@ -114,6 +123,7 @@
 
 .about {
   padding: 128px 0;
+
   @include d(m) {
     padding: 64px 0;
   }
@@ -124,18 +134,19 @@
     place-items: start end;
     align-items: center;
     position: relative;
- 
-    .orna2{
+
+    .orna2 {
       position: absolute;
       bottom: 28%;
       right: 10%;
     }
 
-    .orna3{
+    .orna3 {
       position: absolute;
       top: 0;
       right: 50%;
     }
+
     @include d(m) {
       display: flex;
       flex-direction: column;
@@ -145,10 +156,12 @@
       @include d(m) {
         order: 1;
       }
+
       h2 {
         @include titulo-menor;
         padding-bottom: 20px;
         max-width: 480px;
+
         @include d(m) {
           text-align: center;
         }
@@ -157,6 +170,7 @@
       p {
         @include paragrafo;
         max-width: 450px;
+
         @include d(m) {
           text-align: center;
         }
@@ -166,6 +180,7 @@
         margin-top: 32px;
         padding: 16px 32px;
         @include btn;
+
         @include d(m) {
           margin: 32px auto 0 auto;
         }
@@ -177,6 +192,7 @@
         padding-top: 40px;
         order: 2;
       }
+
       img {
         object-fit: cover;
         width: 100%;
@@ -187,26 +203,28 @@
 
 .destinations {
   padding: 128px 0;
+
   @include d(m) {
     padding: 64px 0;
   }
 
-  .container{
+  .container {
     position: relative;
   }
 
-  .orna1{
+  .orna1 {
     position: absolute;
     top: -5%;
     right: 20%;
   }
-  .orna2{
+
+  .orna2 {
     position: absolute;
     bottom: -10%;
     right: 50%;
   }
 
-  .orna3{
+  .orna3 {
     position: absolute;
     bottom: 30%;
     left: -40px;
@@ -237,6 +255,7 @@
     grid-template-columns: repeat(4, minmax(200px, 25%));
     grid-column-gap: 20px;
     justify-content: space-between;
+
     @include d(m) {
       padding-top: 64px;
       display: flex;
@@ -249,10 +268,41 @@
         max-width: 350px !important;
         margin: 0 auto o !important;
       }
+
       picture {
         img {
           object-fit: cover;
           width: 100%;
+          border-radius: 8px;
+          position: relative;
+          @include d(m){
+            height: 300px;
+          }
+        }
+
+        .text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: #fff;
+          width: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-radius: 0px 6px 0px 0px;
+          p {
+            padding-top: 8px;
+            font-size: rem(16);
+            font-weight: 600;
+            color: #042521;
+          }
+          span{
+            font-size: rem(14);
+            color: #80918E;
+            font-weight: 600;
+            font-family: $font-3;
+           
+          }
         }
       }
     }
@@ -261,22 +311,25 @@
 
 .app {
   padding: 128px 0;
+
   @include d(m) {
     padding: 64px 0;
   }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
     position: relative;
-    .orna2{
+
+    .orna2 {
       position: absolute;
       top: 10%;
       left: 5%;
     }
-  
-    .orna3{
+
+    .orna3 {
       position: absolute;
       bottom: 25%;
       left: 35%;
@@ -292,6 +345,7 @@
         @include titulo-menor;
         padding-bottom: 20px;
         max-width: 410px;
+
         @include d(m) {
           text-align: center;
         }
@@ -300,6 +354,7 @@
       p {
         @include paragrafo;
         max-width: 450px;
+
         @include d(m) {
           text-align: center;
         }
@@ -309,6 +364,7 @@
         margin-top: 32px;
         padding: 16px 32px;
         @include btn;
+
         @include d(m) {
           margin: 32px auto 0 auto;
         }
@@ -319,6 +375,7 @@
       @include d(m) {
         padding-top: 64px;
       }
+
       img {
         object-fit: cover;
         width: 100%;
@@ -329,9 +386,11 @@
 
 .testimonials {
   padding: 128px 0;
+
   @include d(m) {
     padding: 64px 0;
   }
+
   &__titulo {
     h2 {
       @include titulo-menor;
@@ -342,21 +401,22 @@
   &__wrapper {
 
     position: relative;
-    .orna1{
+
+    .orna1 {
       position: absolute;
       top: -20px;
       right: -10px;
       z-index: -1;
       width: 40px;
     }
-    .orna2{
+
+    .orna2 {
       position: absolute;
       bottom: 50%;
       left: 50%
-      
     }
 
-    .orna3{
+    .orna3 {
       position: absolute;
       bottom: 0;
       right: 34%;
@@ -369,20 +429,24 @@
       grid-template-columns: 450px 450px;
       justify-content: space-between;
       align-items: center;
+
       @include d(m) {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
       }
+
       &-texto {
         .stars {
           display: flex;
           align-items: center;
           margin-bottom: 30px;
-          img + img {
+
+          img+img {
             margin-left: 16px;
           }
         }
+
         .depo {
           p {
             font-size: rem(24);
@@ -390,17 +454,21 @@
             font-family: $font-3;
             color: #000;
             max-width: 450px;
+
             @include d(m) {
               font-size: rem(18);
             }
           }
+
           .cite {
             padding-top: 40px;
+
             p {
               font-size: rem(22);
               font-weight: 700;
               font-family: $font-1;
             }
+
             span {
               display: block;
               font-size: rem(18);
@@ -408,13 +476,16 @@
           }
         }
       }
+
       &-img {
         @include d(m) {
           margin-top: 32px;
-          @include d(m){
-            margin: 32px auto 0  auto;
+
+          @include d(m) {
+            margin: 32px auto 0 auto;
           }
         }
+
         picture {
           img {
             width: 100%;
@@ -430,16 +501,20 @@
 
 .blog {
   padding: 128px 0;
+
   @include d(m) {
     padding: 64px 0;
   }
+
   &__titulo {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     h2 {
       @include titulo-menor;
     }
+
     .view__all {
       color: $cor-laranja;
       font-size: rem(16);
@@ -450,30 +525,31 @@
     }
   }
 
-.container{
-  position: relative;
-}
+  .container {
+    position: relative;
+  }
 
-.orna1{
-  position: absolute;
- bottom: -10%;
- right: 30%;
- 
-}
-.orna2{
-  position: absolute;
-  bottom: 30%;
-  left: -40px;
-  
-}
+  .orna1 {
+    position: absolute;
+    bottom: -10%;
+    right: 30%;
 
-.orna3{
-  position: absolute;
-  top: -10%;
-  left: 30%;
-  z-index: 100;
+  }
 
-}
+  .orna2 {
+    position: absolute;
+    bottom: 30%;
+    left: -40px;
+
+  }
+
+  .orna3 {
+    position: absolute;
+    top: -10%;
+    left: 30%;
+    z-index: 100;
+
+  }
 
   &__wrapper {
     padding-top: 64px;
@@ -492,10 +568,12 @@
     &-card {
       max-width: 250px;
       min-width: 200px;
+
       @include d(m) {
         max-width: 100%;
         width: 100%;
       }
+
       &-text {
         h3 {
           font-size: rem(18);
@@ -504,6 +582,7 @@
           margin: 16px 0;
           color: #000;
         }
+
         p {
           font-size: rem(14);
           line-height: 22px;
@@ -518,11 +597,13 @@
           display: block;
         }
       }
+
       &-img {
         img {
           width: 100%;
           object-fit: cover;
           border-radius: 8px;
+
           @include d(m) {
             height: 300px;
           }
@@ -532,41 +613,45 @@
   }
 }
 
-.footer{
+.footer {
   padding: 64px 0 0 0;
   background: #F9F9FB;
-  &__wrapper{
+
+  &__wrapper {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     padding-bottom: 64px;
     border-bottom: 1px solid #C4C4C4;
-    @include d(m){
+
+    @include d(m) {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
     }
 
-    &-item1{
+    &-item1 {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: flex-start;
       max-width: 390px;
-      @include d(m){
+
+      @include d(m) {
         align-items: center;
         padding-bottom: 32px;
       }
-      
+
       p {
         padding: 32px 0 64px 0;
         color: #848484;
         font-family: $font-3;
         font-weight: 300;
         font-size: rem(18);
-        @include d(m){
-         padding: 32px 0;
+
+        @include d(m) {
+          padding: 32px 0;
         }
       }
 
@@ -583,9 +668,11 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: flex-end;
-      @include d(m){
+
+      @include d(m) {
         padding-bottom: 32px;
       }
+
       h3 {
         font-weight: 700;
         font-family: $font-3;
@@ -594,6 +681,7 @@
         padding-bottom: 16px;
 
       }
+
       a {
         display: block;
         color: #848484;
@@ -612,9 +700,11 @@
     justify-content: center;
     align-items: center;
     padding: 32px 0;
+
     a {
       display: block;
-      & + a {
+
+      &+a {
         margin-left: 32px;
       }
     }
@@ -644,10 +734,12 @@
   justify-content: flex-end;
   border-radius: 16px 0px 0px 0px;
   z-index: 20;
+
   @include d(m) {
     top: 40px;
     right: 20px;
   }
+
   .next,
   .prev {
     ion-icon {
@@ -680,4 +772,11 @@
   padding: 8px 42px !important;
   display: inline-flex;
   background: $cor-laranja;
+}
+
+
+.orna1, .orna2, .orna3 {
+  @include d(m){
+    display: none;
+  };
 }
