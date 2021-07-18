@@ -1,41 +1,13 @@
 // @import "../components/secao-contato.scss";
+@include menus;
 
-.menu {
-  padding: 32px 0;
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &-links {
-      display: flex;
-      align-items: center;
-
-      li {
-        & + li {
-          margin-left: 32px;
-        }
-      }
-
-      a {
-        display: block;
-        padding: 5px;
-        font-size: rem(16);
-        font-weight: 500;
-      }
-    }
-  }
-}
-
-.menu__mobile {
-  display: none;
-}
 
 .intro {
-  padding: 64px 0 128px 0;
+  margin-top: 160px;
+  padding: 0px 0 128px 0;
   @include d(m) {
-    padding: 64px 0;
+    padding: 0px 0 64px 0;
+    margin-top: 100px;
   }
 
   &__wrapper {
@@ -44,6 +16,7 @@
     @include d(m) {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
     &-texto {
@@ -55,6 +28,7 @@
         @include d(m) {
           font-size: rem(48);
           width: 100%;
+          margin: 0 auto;
           text-align: center;
         }
       }
@@ -345,6 +319,9 @@
       &-img {
         @include d(m) {
           margin-top: 32px;
+          @include d(m){
+            margin: 32px auto 0  auto;
+          }
         }
         picture {
           img {

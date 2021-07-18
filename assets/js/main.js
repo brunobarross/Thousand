@@ -23,6 +23,53 @@ import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 } */
 
 
+
+
+// menu
+const hamburguer = document.querySelector('.hamburguer');
+const menuMobile = document.querySelector('.menu__mobile');
+const closeMenu = document.querySelector('.close');
+
+
+hamburguer.addEventListener('click', abrirMenu);
+closeMenu.addEventListener('click', fecharMenu);
+
+function abrirMenu(){
+    menuMobile.classList.add("ativo");
+    
+}
+
+function fecharMenu(){
+    menuMobile.classList.remove("ativo");
+}
+
+
+//scroll 
+
+const menu = document.querySelector('.menu');
+
+
+
+window.addEventListener('scroll', animaMenu);
+
+function animaMenu(){
+    const windowTop = window.pageYOffset;
+    if((windowTop) > menu.offsetTop){
+        menu.classList.add("scroll");
+    } else {
+        menu.classList.remove("scroll");
+    }
+
+    //mobile
+    if((windowTop > menuMobile.offsetTop)){
+        menuMobile.classList.add('scroll');
+    } else {
+        menuMobile.classList.remove('scroll');
+    }
+}
+
+
+
 // PAGES 
 const pageHome = new Dom().el("#page__home")
 
@@ -32,6 +79,8 @@ if (pageHome) { // ★ HOME
     if(mediaQuery){
         const swiperMobile = new Swiper(".slide-container", config.propsCard);
     }
+
+
         
 
 }

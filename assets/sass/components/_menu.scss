@@ -1,0 +1,155 @@
+@mixin menus {
+
+    /* MENU DESKTOP*/
+    .menu {
+        padding: 32px 0;
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+        transition-property: padding;
+        transition: .3s ease-in-out;
+
+        @include d(m) {
+            display: none;
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            &-links {
+                display: flex;
+                align-items: center;
+
+                li {
+                    &+li {
+                        margin-left: 32px;
+                    }
+                }
+
+                a {
+                    display: block;
+                    padding: 5px;
+                    font-size: rem(16);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .menu.scroll {
+        box-shadow: rgb(99 99 99 / 10%) 0px 2px 8px 0px;
+        padding: 16px 0;
+    }
+
+
+
+
+    /* MENU MOBILE */
+
+    .menu__mobile {
+        display: none;
+
+        @include d(m) {
+            padding: 16px 0;
+            display: block;
+            background: #fff;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            top: 0;
+            padding: 16px 0;
+            z-index: 100;
+            transition-property: box-shadow;
+            transition: .3s ease-in-out;
+
+            ion-icon {
+                font-size: 48px;
+                padding-right: 15px;
+            }
+
+            .logo {
+                padding-left: 15px;
+            }
+
+            .close {
+                display: none;
+                visibility: hidden;
+
+
+            }
+
+            .navegacao__links {
+                z-index: -1;
+                width: 100%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                right: 0;
+                top: 80px;
+                background: #fff;
+                transition: .2s ease-in-out;
+                transform: translateX(110vw);
+                visibility: hidden;
+                padding: 16px 20px;
+
+                li a {
+                    display: block;
+                    font-size: rem(22);
+                    margin-bottom: 8px;
+                }
+
+                .btn__login {
+                    margin: 16px 0;
+                }
+
+
+            }
+
+
+        }
+    }
+
+    .menu__mobile.ativo .navegacao__links {
+        visibility: visible;
+        transform: translateX(0);
+
+    }
+
+    .menu__mobile.ativo .close {
+        display: block;
+        visibility: visible;
+
+
+    }
+
+    .menu__mobile.ativo .hamburguer {
+        visibility: hidden;
+
+    }
+
+    .menu__mobile.scroll .menu__mobile-wrapper {
+        box-shadow: rgb(99 99 99 / 10%) 0px 2px 8px 0px;
+    }
+
+    .menu__mobile.ativo.scroll .navegacao__links{
+        box-shadow: rgb(99 99 99 / 10%) 0px 2px 8px 0px;
+    }
+
+
+}
