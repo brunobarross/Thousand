@@ -10,6 +10,7 @@
 
     &-links {
       display: flex;
+      align-items: center;
 
       li {
         & + li {
@@ -25,6 +26,10 @@
       }
     }
   }
+}
+
+.menu__mobile {
+  display: none;
 }
 
 .intro {
@@ -464,4 +469,23 @@
   .prev {
     margin-right: 22px;
   }
+}
+
+.btn__login {
+  border: 1px solid #fb8f1d;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: $cor-laranja;
+  padding: 8px 42px !important;
+  display: inline-flex;
+}
+
+.btn__register {
+  border: 1px solid #fb8f1d;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 42px !important;
+  display: inline-flex;
+  background: $cor-laranja;
 }
