@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- style -->
+
+    <link rel="stylesheet" href="assets/css/style.compilado.css">
+
+    <!-- gsap deixar no head -->
+    <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <title>Modelo</title>
+
+</head>
+
+<body>
+
+    <main id="page__home">
+
+        <!-- ☰ MENUS -->
+        <div class="menu">
+            <div class="container">
+                <nav class="menu__wrapper">
+                    <img class="logo" src="assets/img/logo.svg" alt="logo">
+                    <ul class="menu__wrapper-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <!-- fim menus -->
+
+        <section class="intro">
+            <div class="container">
+                <div class="intro__wrapper">
+                    <div class="intro__wrapper-texto">
+                        <h1>Explore and
+                            Travel</h1>
+                        <p>Holiday finder</p>
+                        <form action="" class="select">
+                            <select class="select__box">
+                                <option value="0" selected>Locations</option>
+
+                            </select>
+                            <select class="select__box">
+                                <option value="0">Activity</option>
+                            </select>
+                            <select class="select__box">
+                                <option value="0">Grade</option>
+                            </select>
+                            <select class="select__box">
+                                <option value="0">Date</option>
+                            </select>
+                        </form>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+
+                    <div class="intro__wrapper-img">
+                        <img src="assets/img/thousand-01 1.svg">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__wrapper-img">
+                        <img src="assets/img/Thousand-02 1.svg" alt="thousand 1">
+                    </div>
+
+                    <div class="about__wrapper-texto">
+                        <h2>A new way to explore the world </h2>
+                        <p>For decades travellers have reached for Lonely Planet books when looking to plan and execute
+                            their perfect
+                            trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations">
+            <div class="container slide-container ">
+                <div class="destinations__titulo">
+                    <h2>Featured destinations</h2>
+                    <a href="#" class="view__all">View all<ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="destinations__wrapper swiper-wrapper">
+                    <div class="destinations__wrapper-card swiper-slide">
+                        <picture>
+                            <img src="assets/img/Raja ampat.png">
+                        </picture>
+                    </div>
+                    <div class="destinations__wrapper-card swiper-slide">
+                        <picture>
+                            <img src="assets/img/Fanjingshan.png">
+                        </picture>
+                    </div>
+                    <div class="destinations__wrapper-card swiper-slide">
+                        <picture>
+                            <img src="assets/img/Vevey.png">
+                        </picture>
+                    </div>
+                    <div class="destinations__wrapper-card swiper-slide">
+                        <picture>
+                            <img src="assets/img/Skadar.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app">
+            <div class="container">
+                <div class="app__wrapper">
+                    <div class="app__wrapper-texto">
+                        <h2>Guides by Thousand
+                            Sunny</h2>
+                        <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and
+                            Android)
+                            is the ultimate resource before and during a trip.</p>
+                        <a href="#" class="btn">Download</a>
+                    </div>
+                    <div class="app__wrapper-img">
+                        <img src="assets/img/Thousand-03.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container slide__container position-relative overflow-hidden">
+                <div class="testimonials__titulo">
+                    <h2>Testimonials</h2>
+                </div>
+                <div class="testimonials__wrapper swiper-wrapper">
+                    <div class="testimonials__wrapper-card swiper-slide">
+                        <div class="testimonials__wrapper-card-texto">
+                            <div class="stars">
+                                <img src="assets/img/stars.svg">
+                                <img src="assets/img/stars.svg">
+                                <img src="assets/img/stars.svg">
+                                <img src="assets/img/stars.svg">
+                                <img src="assets/img/stars.svg">
+                            </div>
+                            <div class="depo">
+                                <p>“Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                                    dapibus ac scelerisque eu, facilisis quis purus.
+                                    Morbi blandit sit amet turpis nec”</p>
+                                <div class="cite">
+                                    <p>Edward Newgate</p>
+                                    <span>Founder Circle</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="testimonials__wrapper-card-img">
+                            <picture>
+                                <source media="(max-width:1024px)" srcset="assets/img/cliente-mobile.png">
+                                <img src="assets/img/cliente.png">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="testimonials__wrapper-card swiper-slide">
+                        <div class="testimonials__wrapper-card-texto">
+                            <div class="stars">
+                                <img src="assets/img/stars.svg">
+                                <img src="assets/img/stars.svg">
+                                <img src="assets/img/stars.svg">
+                                <img src="assets/img/stars.svg">
+                                <img src="assets/img/stars.svg">
+                            </div>
+                            <div class="depo">
+                                <p>“Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                                    dapibus ac scelerisque eu, facilisis quis purus.
+                                    Morbi blandit sit amet turpis nec”</p>
+                                <div class="cite">
+                                    <p>Edward Newgate</p>
+                                    <span>Founder Circle</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="testimonials__wrapper-card-img">
+                            <picture>
+                                <source media="(max-width:1024px)" srcset="assets/img/cliente-mobile.png">
+                                <img src="assets/img/cliente.png">
+                            </picture>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="navigation">
+                    <div class="prev">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </div>
+                    <div class="next">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container slide-container">
+                <div class="blog__titulo">
+                    <h2>Trending stories</h2>
+                    <a href="#" class="view__all">View all<ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="blog__wrapper swiper-wrapper">
+                    <div class="blog__wrapper-card swiper-slide">
+                        <picture class="blog__wrapper-card-img">
+                            <img src="assets/img/blog1.png">
+                        </picture>
+                        <div class="blog__wrapper-card-text">
+                            <h3>The many benefits of
+                                taking a healing holiday</h3>
+                            <p>‘Helaing holidays’ are on the rise
+                                tohelp maximise your health and happines...</p>
+                            <a href="#" class="read__more">Read more</a>
+                        </div>
+                    </div>
+                    <div class="blog__wrapper-card swiper-slide">
+                        <picture class="blog__wrapper-card-img">
+                            <img src="assets/img/blog2.png">
+                        </picture>
+                        <div class="blog__wrapper-card-text">
+                            <h3>The best Kyoto restaurant
+                                to try Japanese food</h3>
+                            <p>From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
+                                to visit...</p>
+                            <a href="#" class="read__more">Read more</a>
+                        </div>
+                    </div>
+                    <div class="blog__wrapper-card swiper-slide">
+                        <picture class="blog__wrapper-card-img">
+                            <img src="assets/img/blog3.png">
+                        </picture>
+                        <div class="blog__wrapper-card-text">
+                            <h3>Skip Chichen Itza and head
+                                to this remote Yucatan</h3>
+                            <p>It’s remote and challenging to get,
+                                but braving the jungle and exploring
+                                these ruins without the...</p>
+                            <a href="#" class="read__more">Read more</a>
+                        </div>
+                    </div>
+                    <div class="blog__wrapper-card swiper-slide">
+                        <picture class="blog__wrapper-card-img">
+                            <img src="assets/img/blog4.png">
+                        </picture>
+                        <div class="blog__wrapper-card-text">
+                            <h3>Surf’s up at these beginner
+                                spots around the world</h3>
+                            <p>If learning to surf has in on your to-
+                                do list for a while, the good news
+                                is: it’s never too late...</p>
+                            <a href="#" class="read__more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- jquery -->
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- icones -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- script main -->
+    <script type="module" src="assets/js/main.js"></script>
+
+    <!-- Boostrap 5, Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
