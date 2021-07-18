@@ -6,57 +6,46 @@
 @import "./utilities/clamp";
 @import "./utilities/utilitarios";
 
-
 //exemplo de botao pra voce customizar
-@mixin Botao($cor-texto:white, $cor-background) {
+@mixin Botao($cor-texto: white, $cor-background) {
+  //container
+  //
+  a {
+    display: inline-flex;
+    align-items: center;
+    color: $cor-texto;
+    background: $cor-background;
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-decoration: none;
 
-    //container
-    //
-    a {
-        display: inline-flex;
-        align-items: center;
-        color: $cor-texto;
-        background: $cor-background;
-        cursor: pointer;
-        font-size: 1.25rem;
-        text-decoration: none;
+    //padding sempre no link  para aumentar a zona de contato
+    //icones dentro dos links para ele tbm ser clicavel
+    ion-icon {
+      margin-left: 10px;
+    }
+  }
 
-        //padding sempre no link  para aumentar a zona de contato
-        //icones dentro dos links para ele tbm ser clicavel
-        ion-icon {
-            margin-left: 10px;
-
-        }
+  //hover
+  a {
+    &:hover {
     }
 
-    //hover
-    a {
-        &:hover {}
-
-        &:hover ion-icon {}
-
-
+    &:hover ion-icon {
     }
-
+  }
 }
 
 @mixin titulos_1 {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 
-    h2 {
-        display: inline-block;
-    }
+  h2 {
+    display: inline-block;
+  }
 }
 
-
-
-
-
-
-
 //==================================================
-
 
 // @mixin botao_example {
 
@@ -81,7 +70,6 @@
 //         transform: translateY(-2px) scale(1.04);
 //     }
 // }
-
 
 // 🖤  swiper
 // @mixin botoes_swiper($bg-direito,) {
@@ -113,7 +101,7 @@
 //             background-image: ($bg-direito);
 //             display: grid;
 //             place-items: center;
-//             @include size(40%); 
+//             @include size(40%);
 //             @include inset;
 //             margin: auto;
 //             position: relative;
@@ -135,7 +123,6 @@
 //     }
 // }
 
-
 // 🤎
 // @mixin bullet_swiper($bg) {
 
@@ -149,7 +136,6 @@
 //             opacity;
 //         transform-origin: left right;
 
-
 //         &-active {
 //             width: 20px !important;
 //             border-radius: 10px !important;
@@ -158,10 +144,7 @@
 //     }
 // }
 
-
-
-
-//texto 
+//texto
 
 // @mixin gradiente_no_texto {
 //     background: $gradiente-1;
@@ -217,10 +200,7 @@
 
 //     }
 
-
 // }
-
-
 
 // @mixin card_example() {
 
@@ -267,35 +247,37 @@
 //     }
 // }
 
-
 @mixin btn {
-    background: $cor-laranja;
-    display: block;
-    font-family: $font-3;
-    font-weight: 700;
-    color: #fff;
-    width: 180px;
-    padding: 16px 32px;
-    border-radius: 8px;
+  background: $cor-laranja;
+  display: block;
+  font-family: $font-3;
+  font-weight: 700;
+  color: #fff;
+  width: 180px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    filter: brightness(1.1);
+  }
 }
 
 @mixin titulo-menor {
-    color: #000;
-    font-size: rem(36);
-    line-height: 36px;
-    font-weight: 700;
-    font-family: $font-2;
-    line-height: 50px;
-    @include d(s){
-        font-size: rem(28);
-    }
-   
+  color: #000;
+  font-size: rem(36);
+  line-height: 36px;
+  font-weight: 700;
+  font-family: $font-2;
+  line-height: 50px;
+  @include d(s) {
+    font-size: rem(28);
+  }
 }
 
 @mixin paragrafo {
-    color: $cor-cinza-2;
-    font-family: $font-3;
-    font-weight: 300;
-    font-size: rem(16);
-    line-height: 30px;
+  color: $cor-cinza-2;
+  font-family: $font-3;
+  font-weight: 300;
+  font-size: rem(16);
+  line-height: 30px;
 }

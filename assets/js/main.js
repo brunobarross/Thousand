@@ -44,7 +44,7 @@ function fecharMenu(){
 }
 
 
-//scroll 
+//scroll do menu
 
 const menu = document.querySelector('.menu');
 
@@ -67,6 +67,38 @@ function animaMenu(){
         menuMobile.classList.remove('scroll');
     }
 }
+
+
+
+// animar ao scrollar;
+
+function animacaoScroll(){
+    const secoes = document.querySelectorAll('.js-section');
+    if(secoes.length){
+        const metadeTela = window.innerHeight * 0.6;
+        function animacaoBonita(){
+            secoes.forEach((section) =>{
+                const secoesTopo = section.getBoundingClientRect().top - metadeTela;
+
+                if (secoesTopo < 0){
+                    section.classList.add('ativo');
+                } else {
+                    section.classList.remove('ativo');
+                }
+            })
+
+        }
+
+        animacaoBonita();
+        window.addEventListener('scroll', animacaoBonita);
+
+    }
+
+
+}
+
+animacaoScroll();
+
 
 
 
